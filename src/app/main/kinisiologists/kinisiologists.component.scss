@@ -3,6 +3,7 @@
     text-align: center;
     color: #00cbff;
   }
+  color: #00cbff;
 }
 .btn{
   background-color: transparent;
@@ -12,7 +13,6 @@
   box-shadow: 0 4px 8px 0 rgb(174, 174, 174);
   background-color: rgba(0,0,0,0.25);
   border-radius: 2px;  
-  margin: 0 10% 0 10%;
 }
 .card:hover{
   cursor: pointer;
@@ -27,4 +27,8 @@
       background-color: rgba(55, 130, 175, 0.5);  
     }
   }
+}
+.info{
+  margin: 0;
+  padding-top: 25%;
 }
