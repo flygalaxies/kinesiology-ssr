@@ -1,108 +1,188 @@
 <div class="container main">
-  <h2>TO MAKE IT AS CONVENIANT AS POSSIBLE, ALL THE PRICES OF EVERY KENISIOLOGIST STAYS THE SAME</h2>
+  <h2>PRICES MAY CHANGE ACCORDING TO KINESIOLOGIST AND THEIR SPECIALTIES</h2>
   <br>
   <br>
-  <h5>PLEASE FOLLOW THESE TABLES IN ORDER TO GET THE CORRECT PRICE ACCORDING TO YOUR SESSION</h5>
-  <br>
+  <h5>PLEASE FOLLOW THE TABLE IN ORDER TO GET THE CORRECT PRICE ACCORDING TO YOUR SESSION</h5>
+  <div align="left">
+    <input type="text" class="col-3" id="priceInput" (keyup)="priceSearch()" placeholder="Therapy Search" title="Therapy Search">
+  </div>
   <div class="row">
-    <div class="col-10">
-      <table class="table table-bordered">
+    <div class="col-12">
+      <table class="table table-bordered" id="priceTable">
         <tr>
           <th>Therapy</th>
           <th>Session</th>
-          <th>Duration</th>
+          <th>Duration (min)</th>
           <th>Cost</th>
         </tr>
-        <tr>
-          <td class="sessionType" class="sessionType" rowspan="2">Kinesiology</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Kahuna Massage</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Lymphatic Drainage Massage</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Allergy Nutrition Protocol</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Weight Managment & Control</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Chakra Balance</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Pelvic Girdle Allignment</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Animal Sessions</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Adrenal Fatigue</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td class="sessionType" rowspan="2">Regional Muscle</td>
-          <td>1st Session</td>
-          <td>90</td>
-        </tr>
-        <tr>
-          <td>Sessions thereafter</td>
-          <td>60</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Kinesiology</td>
+            <td>1st Session</td>
+            <td>75</td>
+            <td>R520</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="5">Massage</td>
+            <td>Kahuna (Hawaiian healing)</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Kahuna (Hawaiian healing)</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+          <tr>
+            <td>Back</td>
+            <td>30</td>
+            <td>R300</td>
+          </tr>
+          <tr>
+            <td>Head, Neck & Shoulder</td>
+            <td>30</td>
+            <td>R300</td>
+          </tr>
+          <tr>
+            <td>Head, Neck, Shoulder & Back</td>
+            <td>45</td>
+            <td>R400</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="5">Lymphatic Drainage Massage</td>
+            <td>Retrograde Lymphatic Technique or Whole Body Drainage</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Lymph release of the head and neck</td>
+            <td>40</td>
+            <td>R400</td>
+          </tr>
+          <tr>
+            <td>Eustachian lymph release (middle ear) </td>
+            <td>40</td>
+            <td>R400</td>
+          </tr>
+          <tr>
+            <td>Lower limb lymph release (legs) </td>
+            <td>40</td>
+            <td>R400</td>
+          </tr>
+          <tr>
+            <td>Mammary lymph release (breasts) </td>
+            <td>40</td>
+            <td>R400</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Allergy Nutrition Protocol</td>
+            <td>1st Session</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Weight Managment & Control</td>
+            <td>1st Session</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>60</td>
+            <td>R650</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Chakra Balance</td>
+            <td>7 Main Chakras</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+          <tr>
+            <td>Evaluation & Priority</td>
+            <td>40</td>
+            <td>R400</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Pelvic Girdle Allignment</td>
+            <td>1st Session</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>75</td>
+            <td>R600</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="1">Animal Sessions</td>
+            <td>All Sessions</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Adrenal Fatigue</td>
+            <td>1st Session</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Regional Muscle</td>
+            <td>1st Session</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="sessionType" rowspan="2">Myofascial Trigger Point</td>
+            <td>1st Session</td>
+            <td>90</td>
+            <td>R650</td>
+          </tr>
+          <tr>
+            <td>Follow Up Sessions</td>
+            <td>60</td>
+            <td>R520</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

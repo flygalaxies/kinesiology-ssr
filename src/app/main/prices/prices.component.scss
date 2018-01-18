@@ -10,7 +10,24 @@
 .table-bordered{
     background-color: rgba(55, 130, 175, 0.8);
 }
-.sessionType{
-    font-weight: bold;
+.sessionType{    
     vertical-align: middle;
+}
+#priceInput{    
+    color: #00e1ff;
+    background-color: rgba(55, 130, 175, 0.8);
+    border-radius: 30px;
+    margin: 1%;
+}
+input::-webkit-input-placeholder {
+    color: #00e1ff !important;
+}
+input:-moz-placeholder { /* Firefox 18- */
+    color: #00e1ff !important;  
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #00e1ff !important;
+}
+input:-ms-input-placeholder {  
+    color: #00e1ff !important;  
 }
