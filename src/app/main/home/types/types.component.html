@@ -1,44 +1,53 @@
+<div class="container navigation">
+  <div class="row justify-content-center">
+    <button class="btn col-2" [routerLink]="['/home']">KINESIOLOGISTS</button>
+    <button class="btn col-2" [routerLink]="['/definition']">DEFINITION</button>
+    <button class="btn col-2" [routerLink]="['/benefits']">BENEFITS</button>
+    <button class="btn col-2" [routerLink]="['/therapies']">THERAPIES</button>
+  </div>
+</div>
 <div class="container">
   <div class="row justify-content-center">
     <h1 class="types col-9">DIFFERENT SESSIONS</h1>
   </div>
   <div class="row justify-content-center">
     <div class="types col-3">
-      <button class="btn" #kinesiologyModal (click)="kinesiologyModal.show()">Kinesiology</button>
+      <button class="btn" #kinesiologyModal [routerLink]="['/therapies/kinesiology']">Kinesiology</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #kahunaMassageModal (click)="kahunaMassageModal.show()">Kahuna Massage</button>
+      <button class="btn" #kahunaMassageModal [routerLink]="['/therapies/massage']">Massage</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #lymphaticModal (click)="lymphaticModal.show()">Lymphatic drainage massage</button>
+      <button class="btn" #lymphaticModal [routerLink]="['/therapies/kinesiology']">Lymphatic drainage massage</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #allergyModal (click)="allergyModal.show()">Allergy nutrition protocol</button>
+      <button class="btn" #allergyModal [routerLink]="['/therapies/kinesiology']">Allergy nutrition protocol</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #weightModal (click)="weightModal.show()">Weight Management and Control</button>
+      <button class="btn" #weightModal [routerLink]="['/therapies/kinesiology']">Weight Management and Control</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #chakraModal (click)="chakraModal.show()">Chakra Balance</button>
+      <button class="btn" #chakraModal [routerLink]="['/therapies/kinesiology']">Chakra Balance</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #pelvicModal (click)="pelvicModal.show()">Pelvic girdle allignment</button>
+      <button class="btn" #pelvicModal [routerLink]="['/therapies/kinesiology']">Pelvic girdle allignment</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #animalModal (click)="animalModal.show()">Animal Sessions</button>
+      <button class="btn" #animalModal [routerLink]="['/therapies/kinesiology']">Animal Sessions</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #adrenalFatigueModal (click)="adrenalFatigueModal.show()">Adrenal Fatigue</button>
+      <button class="btn" #adrenalFatigueModal [routerLink]="['/therapies/kinesiology']">Adrenal Fatigue</button>
     </div>
     <div class="types col-3">
-      <button class="btn" #regionalMuscleModal (click)="regionalMuscleModal.show()">Regional Muscle</button>
+      <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/kinesiology']">Regional Muscle</button>
     </div>
+    <router-outlet></router-outlet>
     <div class="types col-10">
       <h3>
         All processes are performed with muscle test response, yielding accurate results specifically for your individual needs and
         requirements.
       </h3>
-    </div>
+    </div>    
   </div>
 </div>
 

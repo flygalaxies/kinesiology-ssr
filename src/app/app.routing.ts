@@ -10,6 +10,9 @@ import { PricesComponent } from './main/prices/prices.component';
 import { DefinitionComponent } from '../app/main/home/definition/definition.component';
 import { BenefitsComponent } from '../app/main/home/benefits/benefits.component';
 import { TypesComponent } from '../app/main/home/types/types.component';
+import { KinesiologyComponent } from './main/home/types/kinesiology/kinesiology.component';
+import { MassageComponent } from './main/home/types/massage/massage.component';
+import { LymphaticComponent } from './main/home/types/lymphatic/lymphatic.component';
 
 export const routes: Routes = [
   {
@@ -20,30 +23,35 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'definition',
+    component: DefinitionComponent,
+  },
+  {
+    path: 'benefits',
+    component: BenefitsComponent,
+  },
+  {
+    path: 'therapies',
+    component: TypesComponent,
     children: [
       {
-        path: 'define',
-        component: DefinitionComponent,
-        outlet: 'info',
+        path: 'kinesiology',
+        component: KinesiologyComponent
       },
       {
-        path: 'types',
-        component: TypesComponent,
-        outlet: 'info',        
-      },
-      {
-        path: 'benefits',
-        component: BenefitsComponent,
-        outlet: 'info',
+        path: 'massage',
+        component: MassageComponent
       }
     ]
   },
   {
-    path: 'babsiePage',
+    path: 'babsie',
     component: BabsieComponent
   },
   {
-    path: 'melinaPage',
+    path: 'melina',
     component: MelinaComponent
   },
   {

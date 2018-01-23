@@ -1,3 +1,14 @@
+.navigation{  
+    margin-bottom: 1%;   
+    background-color: rgba(55, 130, 175, 0.6);
+    max-width: 100%;        
+    .btn{
+      margin: 1%;
+      border-radius: 25px;
+      background-color: rgba(0, 8, 62, 0.5);
+      color: #00cbff;
+    }
+  }
 .types{
     display: inline-block;
     background-color: rgba(55, 130, 175, 0.6);
@@ -12,17 +23,14 @@
     }
     color: #00e1ff;
 }
-.container{
-    max-width: 90%;
-}
 
-.modal{
-    background-color: rgba(0, 3, 10, 0.7);
-}
-.modal-content{
-    color: #00e1ff;
-    background-color: rgba(55, 130, 175, 0.8);
-    .close{
-        color: #00e1ff;
-    }
-}
+// .modal{
+//     background-color: rgba(0, 3, 10, 0.7);
+// }
+// .modal-content{
+//     color: #00e1ff;
+//     background-color: rgba(55, 130, 175, 0.8);
+//     .close{
+//         color: #00e1ff;
+//     }
+// }

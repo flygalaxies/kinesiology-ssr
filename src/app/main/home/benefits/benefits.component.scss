@@ -1,3 +1,14 @@
+.navigation{  
+  margin-bottom: 1%;   
+  background-color: rgba(55, 130, 175, 0.6);
+  max-width: 100%;        
+  .btn{
+    margin: 1%;
+    border-radius: 25px;
+    background-color: rgba(0, 8, 62, 0.5);
+    color: #00cbff;
+  }
+}
 .benefits{
     background-color: rgba(55, 130, 175, 0.6);
     padding-left: 5%;
@@ -6,3 +17,4 @@
     text-align: center;
     color: #00e1ff;
   }
+  

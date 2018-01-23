@@ -20,6 +20,9 @@ import { FoodForLifeComponent } from '../app/main/food-for-life/food-for-life.co
 import { DefinitionComponent } from '../app/main/home/definition/definition.component';
 import { BenefitsComponent } from '../app/main/home/benefits/benefits.component';
 import { TypesComponent } from '../app/main/home/types/types.component';
+import { KinesiologyComponent } from './main/home/types/kinesiology/kinesiology.component';
+import { MassageComponent } from './main/home/types/massage/massage.component';
+import { LymphaticComponent } from './main/home/types/lymphatic/lymphatic.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { TypesComponent } from '../app/main/home/types/types.component';
     FoodForLifeComponent,
     DefinitionComponent,
     BenefitsComponent,
-    TypesComponent
+    TypesComponent,
+    KinesiologyComponent,
+    MassageComponent,
+    LymphaticComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Kinesiology-Practice' }),
