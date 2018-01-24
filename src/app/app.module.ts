@@ -23,6 +23,14 @@ import { TypesComponent } from '../app/main/home/types/types.component';
 import { KinesiologyComponent } from './main/home/types/kinesiology/kinesiology.component';
 import { MassageComponent } from './main/home/types/massage/massage.component';
 import { LymphaticComponent } from './main/home/types/lymphatic/lymphatic.component';
+import { AllergyComponent } from './main/home/types/allergy/allergy.component';
+import { WeightComponent } from './main/home/types/weight/weight.component';
+import { ChakraComponent } from './main/home/types/chakra/chakra.component';
+import { PelvicComponent } from './main/home/types/pelvic/pelvic.component';
+import { AnimalComponent } from './main/home/types/animal/animal.component';
+import { AdrenalComponent } from './main/home/types/adrenal/adrenal.component';
+import { RegionalComponent } from './main/home/types/regional/regional.component';
+import { PainComponent } from './main/home/types/pain/pain.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +49,15 @@ import { LymphaticComponent } from './main/home/types/lymphatic/lymphatic.compon
     TypesComponent,
     KinesiologyComponent,
     MassageComponent,
-    LymphaticComponent
+    LymphaticComponent,
+    AllergyComponent,
+    WeightComponent,
+    ChakraComponent,
+    PelvicComponent,
+    AnimalComponent,
+    AdrenalComponent,
+    RegionalComponent,
+    PainComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Kinesiology-Practice' }),
