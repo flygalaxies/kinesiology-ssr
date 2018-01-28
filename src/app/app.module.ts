@@ -16,7 +16,7 @@ import { MelinaComponent } from '../app/main/kinisiologists/melina/melina.compon
 import { PricesComponent } from '../app/main/prices/prices.component';
 import { JoinUsComponent } from '../app/main/join-us/join-us.component';
 import { FeedbackComponent } from '../app/main/feedback/feedback.component';
-import { FoodForLifeComponent } from '../app/main/food-for-life/food-for-life.component';
+import { ForLifeComponent } from '../app/main/for-life/for-life.component';
 import { DefinitionComponent } from '../app/main/home/definition/definition.component';
 import { BenefitsComponent } from '../app/main/home/benefits/benefits.component';
 import { TypesComponent } from '../app/main/home/types/types.component';
@@ -31,6 +31,7 @@ import { AnimalComponent } from './main/home/types/animal/animal.component';
 import { AdrenalComponent } from './main/home/types/adrenal/adrenal.component';
 import { RegionalComponent } from './main/home/types/regional/regional.component';
 import { PainComponent } from './main/home/types/pain/pain.component';
+import { KefirComponent } from './main/for-life/kefir/kefir.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { PainComponent } from './main/home/types/pain/pain.component';
     PricesComponent,
     JoinUsComponent,
     FeedbackComponent,
-    FoodForLifeComponent,
+    ForLifeComponent,
     DefinitionComponent,
     BenefitsComponent,
     TypesComponent,
@@ -57,7 +58,8 @@ import { PainComponent } from './main/home/types/pain/pain.component';
     AnimalComponent,
     AdrenalComponent,
     RegionalComponent,
-    PainComponent
+    PainComponent,
+    KefirComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Kinesiology-Practice' }),

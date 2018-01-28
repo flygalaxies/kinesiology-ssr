@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 @Component({
-  selector: 'app-food-for-life',
-  templateUrl: './food-for-life.component.html',
-  styleUrls: ['./food-for-life.component.scss']
+  selector: 'app-for-life',
+  templateUrl: './for-life.component.html',
+  styleUrls: ['./for-life.component.scss']
 })
-export class FoodForLifeComponent implements OnInit {
+export class ForLifeComponent implements OnInit {
 
   constructor(meta: Meta, title: Title) {
     title.setTitle('Kinesiology Session Rates- The time and cost of each type of session');

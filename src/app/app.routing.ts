@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './main/home/home.component';
 import { BabsieComponent } from '../app/main/kinisiologists/babsie/babsie.component';
 import { MelinaComponent } from '../app/main/kinisiologists/melina/melina.component';
-import { FoodForLifeComponent } from './main/food-for-life/food-for-life.component';
+import { ForLifeComponent } from './main/for-life/for-life.component';
 import { JoinUsComponent } from './main/join-us/join-us.component';
 import { FeedbackComponent } from './main/feedback/feedback.component';
 import { PricesComponent } from './main/prices/prices.component';
@@ -21,6 +21,7 @@ import { AnimalComponent } from './main/home/types/animal/animal.component';
 import { AdrenalComponent } from './main/home/types/adrenal/adrenal.component';
 import { RegionalComponent } from './main/home/types/regional/regional.component';
 import { PainComponent } from './main/home/types/pain/pain.component';
+import { KefirComponent } from './main/for-life/kefir/kefir.component';
 
 export const routes: Routes = [
   {
@@ -99,8 +100,14 @@ export const routes: Routes = [
     component: MelinaComponent
   },
   {
-    path: 'foodForLife',
-    component: FoodForLifeComponent
+    path: 'ForLife',
+    component: ForLifeComponent,
+    children: [
+    ]
+  },
+  {
+    path: 'kefir',
+    component: KefirComponent
   },
   {
     path: 'joinUs',
