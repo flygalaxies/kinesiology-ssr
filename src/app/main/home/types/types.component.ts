@@ -20,4 +20,8 @@ export class TypesComponent implements OnInit {
   ngOnInit() {
   }
 
+  scroll(el){
+    el.scrollIntoView();
+  }
+
 }

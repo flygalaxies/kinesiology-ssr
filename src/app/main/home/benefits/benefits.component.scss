@@ -5,16 +5,30 @@
   .btn{
     margin: 1%;
     border-radius: 25px;
+    width: 15%;
     background-color: rgba(0, 8, 62, 0.5);
     color: #00cbff;
   }
 }
 .benefits{
     background-color: rgba(55, 130, 175, 0.6);
-    padding-left: 5%;
-    padding-right: 5%;
+    // padding-left: 5%;
+    // padding-right: 5%;
     border-radius: 30px;
-    text-align: center;
+    text-align: left;
     color: #00e1ff;
+    h1{
+      text-align: center;
+    }
   }
-  
+  @media screen and (max-width: 600px){
+    .navigation{   
+      .btn{      
+        width: auto;
+        font-size: 10px;
+      }    
+    }
+    .benefits{    
+      margin: 2.5%;    
+    }
+  }

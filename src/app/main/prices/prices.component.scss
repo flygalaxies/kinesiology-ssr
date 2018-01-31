@@ -3,10 +3,6 @@
     text-align: center;
     color: #00e1ff;
 }
-.cost{
-    
-    padding: 0;
-}
 .table-bordered{
     background-color: rgba(55, 130, 175, 0.8);
 }
@@ -19,6 +15,10 @@
     border-radius: 30px;
     margin: 1%;
 }
+.therapyTable{
+    margin: auto;
+    width: 100%;             
+}
 input::-webkit-input-placeholder {
     color: #00e1ff !important;
 }
@@ -30,4 +30,10 @@ input::-moz-placeholder {  /* Firefox 19+ */
 }
 input:-ms-input-placeholder {  
     color: #00e1ff !important;  
+}
+@media screen and (max-width: 600px){
+    .therapyTable{
+        overflow-x: auto;
+        margin: 2%;                  
+    }
 }

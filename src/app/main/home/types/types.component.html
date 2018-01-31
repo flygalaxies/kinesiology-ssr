@@ -1,65 +1,67 @@
 <div class="container navigation">
   <div class="row justify-content-center">
-    <button class="btn col-2" [routerLink]="['/home']">KINESIOLOGISTS</button>
-    <button class="btn col-2" [routerLink]="['/definition']">DEFINITION</button>
-    <button class="btn col-2" [routerLink]="['/benefits']">BENEFITS</button>
-    <button class="btn col-2" [routerLink]="['/therapies']">THERAPIES</button>
+    <button class="btn " [routerLink]="['/home']">KINESIOLOGISTS</button>
+    <button class="btn " [routerLink]="['/definition']">DEFINITION</button>
+    <button class="btn " [routerLink]="['/benefits']">BENEFITS</button>
+    <button class="btn " [routerLink]="['/therapies']">THERAPIES</button>
   </div>
 </div>
 <div class="container">
   <div class="row justify-content-center">
-    <h1 class="types col-9">DIFFERENT SESSIONS</h1>
+    <h1 class="types col-9">DIFFERENT THERAPIES</h1>
   </div>
   <div class="row justify-content-center">
-    <div class="types col-3">
-      <button class="btn" #kinesiologyModal [routerLink]="['/therapies/kinesiology']">Kinesiology</button>
+    <div class="types ">
+      <button class="btn" #kinesiologyModal [routerLink]="['/therapies/kinesiology']" (click)="scroll(router)">Kinesiology</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #kahunaMassageModal [routerLink]="['/therapies/massage']">Massage</button>
+    <div class="types ">
+      <button class="btn" #kahunaMassageModal [routerLink]="['/therapies/massage']" (click)="scroll(router)">Massage</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #lymphaticModal [routerLink]="['/therapies/lymphatic']">Lymphatic drainage massage</button>
+    <div class="types ">
+      <button class="btn" #lymphaticModal [routerLink]="['/therapies/lymphatic']" (click)="scroll(router)">Lymphatic drainage massage</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #allergyModal [routerLink]="['/therapies/allergy']">Allergy nutrition protocol</button>
+    <div class="types ">
+      <button class="btn" #allergyModal [routerLink]="['/therapies/allergy']" (click)="scroll(router)">Allergy nutrition protocol</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #weightModal [routerLink]="['/therapies/weightManagement']">Weight Management</button>
+    <div class="types ">
+      <button class="btn" #weightModal [routerLink]="['/therapies/weightManagement']" (click)="scroll(router)">Weight Management</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #chakraModal [routerLink]="['/therapies/chakra']">Chakra Balance</button>
+    <div class="types ">
+      <button class="btn" #chakraModal [routerLink]="['/therapies/chakra']" (click)="scroll(router)">Chakra Balance</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #pelvicModal [routerLink]="['/therapies/pelvicGirdle']">Pelvic girdle allignment</button>
+    <div class="types ">
+      <button class="btn" #pelvicModal [routerLink]="['/therapies/pelvicGirdle']" (click)="scroll(router)">Pelvic girdle allignment</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #animalModal [routerLink]="['/therapies/animal']">Animal Sessions</button>
+    <div class="types ">
+      <button class="btn" #animalModal [routerLink]="['/therapies/animal']" (click)="scroll(router)">Animal Sessions</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #adrenalFatigueModal [routerLink]="['/therapies/adrenalFatigue']">Adrenal Fatigue</button>
+    <div class="types ">
+      <button class="btn" #adrenalFatigueModal [routerLink]="['/therapies/adrenalFatigue']" (click)="scroll(router)">Adrenal Fatigue</button>
     </div>
-    <div class="types col-3">
-      <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/regionalMuscle']">Regional Muscle</button>
+    <div class="types ">
+      <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/regionalMuscle']" (click)="scroll(router)">Regional Muscle</button>
     </div>
-        <!-- <div class="types col-3">
+    <!-- <div class="types ">
       <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/painProtocol']">ADHD Brain Integration</button>
     </div> -->
-    <!-- <div class="types col-3">
+    <!-- <div class="types ">
       <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/painProtocol']">Pain Protocol</button>
     </div> -->
-    <!-- <div class="types col-3">
+    <!-- <div class="types ">
       <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/painProtocol']">Angst Protocol</button>
     </div> -->
-    <!-- <div class="types col-3">
+    <!-- <div class="types ">
       <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/painProtocol']">Pre- and post-surgery</button>
     </div> -->
-    <!-- <div class="types col-3">
+    <!-- <div class="types ">
       <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/painProtocol']">Sports Enhancement /button>
     </div> -->
-    <!-- <div class="types col-3">
+    <!-- <div class="types ">
       <button class="btn" #regionalMuscleModal [routerLink]="['/therapies/painProtocol']">Substance Abuse</button>
     </div> -->
-    <router-outlet></router-outlet>
+    <div #router>
+      <router-outlet></router-outlet>
+    </div>
     <div class="types col-10">
       <h3>
         All processes are performed with muscle test response, yielding accurate results specifically for your individual needs and

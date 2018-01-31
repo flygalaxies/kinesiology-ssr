@@ -27,6 +27,10 @@ export class NavbarComponent implements OnInit {
         document.getElementById('mainSidenav').style.width = '15vw';
         document.getElementById('main').style.marginLeft = '15vw';
       }
+      if (this.w < 600){
+        document.getElementById('mainSidenav').style.width = '0vw';
+        document.getElementById('main').style.marginLeft = '0vw';
+      }
     }
   }
   @HostListener('window:resize', ['event'])

@@ -5,6 +5,7 @@
     .btn{
       margin: 1%;
       border-radius: 25px;
+      width: 15%;
       background-color: rgba(0, 8, 62, 0.5);
       color: #00cbff;
     }
@@ -14,7 +15,20 @@
     margin-left: 1%;
     margin-right: 1%;
     padding: 2%;
+    width: 30%;
     border-radius: 30px;
     text-align: center;
     color: #00e1ff;
+}
+@media screen and (max-width: 600px){
+  .navigation{   
+    .btn{      
+      width: auto;
+      font-size: 10px;
+    }    
+  }
+  .whatIs{
+    width: auto;
+    margin: 2.5%;    
+  }
 }

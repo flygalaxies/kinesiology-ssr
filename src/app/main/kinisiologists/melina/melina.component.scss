@@ -2,11 +2,15 @@
     margin-top: 2%;    
     color: #00e1ff;
 }
-.imageContainer{      
-    border-radius: 30px;
-    width: 100%;
+.profileImage{
+    .imageContainer{      
+        border-radius: 30px;
+        width: 100%;
+    }
 }
 .summary{
+    width: 60%;
+    margin: 0 5%;
     font-size: 60;
     background-color: rgba(55, 130, 175, 0.8);
     padding-left: 5%;
@@ -16,8 +20,9 @@
 }
 
 .contact{
-    margin-top: 2.5%;
-    margin-right: 2.5%;    
+    margin: 5% 5% 0 0;  
+    width: 40%;
+    padding: 1% 2.5%;
     h2{
         text-align: center;
     }
@@ -28,26 +33,34 @@
     border-radius: 30px;
     text-align: left;      
 }
-.map{    
-    agm-map {        
-        height: 30vh;
-      }
-      padding-top: 2.5%;
-      padding-bottom: 5%;
-}
-.prices{
-    margin-top: 2.5%;
-    font-size: 60;
+.capable{
+    margin: 5% 5% 0 0;  
+    width: 45%;
     background-color: rgba(55, 130, 175, 0.8);
-    padding: 0;
-    border-radius: 30px;
     text-align: center;
-    .cost{
+    li{
         text-align: left;
-        font-size: medium;
     }
+    border-radius: 30px;
 }
-.times{
-    text-align: center;
-    font-size: xx-small;
+
+@media screen and (max-width: 600px){
+    .profileImage{
+        margin: auto;
+    }
+    .summary{
+        margin: 2%;
+        width: 100%;
+    }
+    .contact{
+        margin: 2%;
+        width: 100%;
+        h5{
+            font-size: 15px;        
+        }
+    }
+    .capable{
+        width: 100%;
+        margin: 2%;
+    }    
 }

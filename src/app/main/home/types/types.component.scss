@@ -5,6 +5,7 @@
     .btn{
       margin: 1%;
       border-radius: 25px;
+      width: 15%;
       background-color: rgba(0, 8, 62, 0.5);
       color: #00cbff;
     }
@@ -13,6 +14,7 @@
     display: inline-block;
     background-color: rgba(55, 130, 175, 0.6);
     margin: 1%;    
+    width: 30%;
     border-radius: 30px;
     text-align: center;
     .btn{
@@ -23,14 +25,17 @@
     }
     color: #00e1ff;
 }
-
-// .modal{
-//     background-color: rgba(0, 3, 10, 0.7);
-// }
-// .modal-content{
-//     color: #00e1ff;
-//     background-color: rgba(55, 130, 175, 0.8);
-//     .close{
-//         color: #00e1ff;
-//     }
-// }
+@media screen and (max-width: 600px){
+    .navigation{   
+      .btn{      
+        width: auto;
+        font-size: 10px;
+      }    
+    }
+    .types{
+        width: 60%;
+    }
+    #outlet{
+        margin: 2.5%;
+    }
+}
