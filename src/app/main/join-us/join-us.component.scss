@@ -1,13 +1,29 @@
 .container{
     padding: 2.5%;
     text-align: center;
-    color: #00cbff;
-    height: 70vh;
+    color: #00cbff;    
+    max-width: 90%;
 }
-.info{
-    margin-top: 5%;
-    margin-left: 1%;    
+.infoContainer{
+    margin: 2.5%;
+    .info{
+        padding: 2.5%;
+        width: 47.5%;          
+        margin: 0 1%;
+        border-radius: 30px;         
+        background-color: rgba(55, 130, 175, 0.6);
+        a{
+            color: #00cbff;
+        }
+        h4,ul{
+            text-align: left;    
+        }    
+    }    
+}
+.safe{
     padding: 2.5%;
+    width: 50%;
+    margin: auto;    
     border-radius: 30px;         
     background-color: rgba(55, 130, 175, 0.6);
     a{
@@ -16,4 +32,18 @@
     h4,ul{
         text-align: left;    
     }    
+}
+@media screen and (max-width: 600px){
+    .infoContainer{
+        .info{
+            width: 100%;
+            a{
+                font-size: 20px;
+            }
+            margin: 2.5% 1%;
+        }  
+    }
+    .safe{
+        width: 80%;
+    }
 }
